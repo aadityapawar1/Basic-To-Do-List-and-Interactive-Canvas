@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Todo and Drawing App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Logout Button -->
+    <button id="logout-btn">Logout</button>
+    
+    <div class="wrapper">
+      <!-- Todo Section -->
+      <section id="task-input-section">
+        <h1>Todo App - Aditya Pawar</h1>
+        <div id="task-input-container">
+          <input type="text" id="task-input" placeholder="Add task here" />
+          <button id="add-task-btn">Add task</button>
+        </div>
+        <ol id="task-list"></ol>
+        <ol id="task-list--completed"></ol>
+      </section>
+
+      <!-- Drawing Section -->
+      <section id="drawing-section">
+        <h1>Canvas Drawing</h1>
+        <canvas id="drawing-canvas"></canvas>
+        <button id="toggle-drawing-btn">Start Drawing</button>
+        <button id="clear-canvas-btn">Clear Canvas</button>
+      </section>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
